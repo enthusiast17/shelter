@@ -1,0 +1,202 @@
+@font-face {
+    font-family: 'Georgia-figma';
+    src: url('../../fonts/george.ttf');
+}
+
+body {
+    margin: 0px;
+    width: 100%;
+}
+
+/*
+    General
+*/
+
+h2 {
+    font-family: 'Georgia-figma', serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 44px;
+    line-height: 57.2px;
+    color: #FFFFFF;
+}
+
+p {
+    font-family: Arial;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 15px;
+    line-height: 24px;
+    color: #CDCDCD;
+}
+
+button {
+    display: block;
+    padding: 15px 45px 15px 45px;
+    font-family: 'Georgia-figma', serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 17px;
+    letter-spacing: 0.06em;
+    line-height: 22.1px;
+    background-color: #F1CDB3;
+    border: none;
+    border-radius: 100px;
+    color: #292929;
+    outline: none;
+}
+
+button:hover {
+    cursor: pointer;
+}
+
+a:hover {
+    cursor: pointer;
+}
+
+/*
+    Start screen
+*/
+
+.start-screen {
+    height: 908px;
+    width: 1920px;
+    background: url('../../images/noise_transparent.png'), radial-gradient(100% 215.42% at 0% 0%, #5B483A 0%, #262425 100%), #211F20;
+    overflow: hidden;
+}
+
+/*
+    Header
+*/
+
+.start-screen header {
+    margin: 60px auto;
+    height: 60px;
+    width: 1200px;
+}
+
+/*
+    Logo
+*/
+
+.start-screen header .logo {
+    float: left;
+    height: 60px;
+    width: 184px;
+}
+
+.start-screen header .logo .logo-title a {
+    font-family: 'Georgia-figma', serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 33px;
+    line-height: 110%;
+    color: #F1CDB3;
+    letter-spacing: 1px;
+    word-spacing: 2.3px;
+    text-align: start;
+    text-align-last: justify;
+    text-align-last: center;
+}
+
+.start-screen header .logo .logo-subtitle a {
+    margin: 10px 0px 0px 0px;
+    font-family: Arial;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 13px;
+    color: #FFFFFF;
+    letter-spacing: 0.1em;
+    text-align: end;
+}
+
+/*
+    Navigation
+*/
+
+.start-screen header .navigation {
+    height: 100%;
+    width: 443px;
+    float: right;
+    display: flex;
+    align-items: center;
+}
+
+.start-screen header .navigation nav {
+    margin: 16px 0px 18px 0px;
+    width: 100%;
+}
+
+.start-screen header .navigation nav ul {
+    margin: 0px;
+    padding: 0px;
+    list-style-type: none;
+}
+
+.start-screen header .navigation nav ul li {
+    display: inline-block;
+}
+
+.start-screen header .navigation nav ul li + li:before {
+    margin: 0px 0px 0px 31.5px;
+    content: "";
+}
+
+.start-screen header .navigation nav ul li a {
+    font-family: Arial;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 15px;
+    color: #CDCDCD;
+}
+
+.start-screen header .navigation nav ul li:first-child a {
+    padding: 0px 0px 3px 0px;
+    border-bottom: 3px solid #F1CDB3;
+    color: #FAFAFA;
+}
+
+.start-screen header .navigation nav ul li a:hover {
+    padding: 0px 0px 3px 0px;
+    border-bottom: 3px solid #F1CDB3;
+    color: #FAFAFA;
+    cursor: pointer;
+}
+
+/*
+    Not only
+*/
+
+.start-screen .not-only {
+    margin: 0px auto;
+    height: 728px;
+    width: 1200px;
+    overflow: hidden;
+}
+
+.start-screen .not-only .content {
+    margin: 163px 42px 244px 0px;
+    height: 321px;
+    width: 460px;
+    float: left;
+}
+
+.start-screen .not-only .content h2 {
+    margin: 0px 0px 42px 0px;
+    width: 310px;
+}
+
+
+.start-screen .not-only .content p {
+    margin: 0px 0px 41px 0px;
+}
+
+.start-screen .not-only .content button {
+    margin: 0px;
+}
+
+.start-screen .not-only .content-img {
+    height: 100%;
+    width: 698px;
+    float: right;
+}
