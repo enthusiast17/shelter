@@ -5,6 +5,7 @@
 
 body {
     margin: 0px;
+    height: 100%;
     width: 100%;
 }
 
@@ -59,6 +60,7 @@ a:hover {
 */
 
 .start-screen {
+    margin: 0px auto;
     height: 908px;
     width: 1920px;
     background: url('../../images/noise_transparent.png'), radial-gradient(100% 215.42% at 0% 0%, #5B483A 0%, #262425 100%), #211F20;
@@ -80,12 +82,13 @@ a:hover {
 */
 
 .start-screen header .logo {
+    position: relative;
     float: left;
     height: 60px;
     width: 184px;
 }
 
-.start-screen header .logo .logo-title a {
+.start-screen header .logo .logo-title>a {
     font-family: 'Georgia-figma', serif;
     font-weight: 400;
     font-style: normal;
@@ -99,15 +102,18 @@ a:hover {
     text-align-last: center;
 }
 
-.start-screen header .logo .logo-subtitle a {
-    margin: 10px 0px 0px 0px;
+.start-screen header .logo .logo-subtitle {
+    margin: 7px 0px 0px 3px;
+}
+
+.start-screen header .logo .logo-subtitle>a {
     font-family: Arial;
     font-weight: 400;
     font-style: normal;
     font-size: 13px;
     color: #FFFFFF;
     letter-spacing: 0.1em;
-    text-align: end;
+    text-align: right;
 }
 
 /*
