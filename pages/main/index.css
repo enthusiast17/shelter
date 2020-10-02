@@ -1,0 +1,260 @@
+@font-face {
+    font-family: 'Georgia-figma';
+    src: url('../../assets/fonts/george.ttf');
+}
+
+body {
+    margin: 0px;
+    height: 100%;
+    width: 100%;
+}
+
+/*
+    General
+*/
+
+h2 {
+    font-family: 'Georgia-figma', serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 44px;
+    line-height: 57.2px;
+    color: #FFFFFF;
+}
+
+h3 {
+    font-family: 'Georgia-figma', serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 35px;
+    line-height: 45.5px;
+    letter-spacing: 0.06em;
+    color: #545454;
+}
+
+p {
+    font-family: Arial;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 15px;
+    line-height: 24px;
+    color: #CDCDCD;
+}
+
+button {
+    display: block;
+    padding: 15px 45px 15px 45px;
+    font-family: 'Georgia-figma', serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 17px;
+    letter-spacing: 0.06em;
+    line-height: 22.1px;
+    background-color: #F1CDB3;
+    border: none;
+    border-radius: 100px;
+    color: #292929;
+    outline: none;
+}
+
+button:hover {
+    cursor: pointer;
+}
+
+a:hover {
+    cursor: pointer;
+}
+
+/*
+    Start screen
+*/
+
+.start-screen {
+    margin: 0px auto;
+    height: 908px;
+    width: 1280px;
+    background: url('../../assets/images/noise_transparent.png'), radial-gradient(100% 215.42% at 0% 0%, #5B483A 0%, #262425 100%), #211F20;
+    overflow: hidden;
+}
+
+/*
+    Header
+*/
+
+.start-screen header {
+    margin: 60px auto;
+    height: 60px;
+    width: 1200px;
+}
+
+/*
+    Logo
+*/
+
+.start-screen header .logo {
+    position: relative;
+    float: left;
+    height: 60px;
+    width: 184px;
+}
+
+.start-screen header .logo .logo-title>a {
+    font-family: 'Georgia-figma', serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 33px;
+    line-height: 110%;
+    color: #F1CDB3;
+    letter-spacing: 1px;
+    word-spacing: 2.3px;
+    text-align: start;
+    text-align-last: justify;
+    text-align-last: center;
+}
+
+.start-screen header .logo .logo-subtitle {
+    margin: 7px 0px 0px 3px;
+}
+
+.start-screen header .logo .logo-subtitle>a {
+    font-family: Arial;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 13px;
+    color: #FFFFFF;
+    letter-spacing: 0.1em;
+    text-align: right;
+}
+
+/*
+    Navigation
+*/
+
+.start-screen header .navigation {
+    height: 100%;
+    width: 443px;
+    float: right;
+    display: flex;
+    align-items: center;
+}
+
+.start-screen header .navigation nav {
+    margin: 16px 0px 18px 0px;
+    width: 100%;
+}
+
+.start-screen header .navigation nav ul {
+    margin: 0px;
+    padding: 0px;
+    list-style-type: none;
+}
+
+.start-screen header .navigation nav ul li {
+    display: inline-block;
+}
+
+.start-screen header .navigation nav ul li + li:before {
+    margin: 0px 0px 0px 31.5px;
+    content: "";
+}
+
+.start-screen header .navigation nav ul li a {
+    font-family: Arial;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 15px;
+    color: #CDCDCD;
+}
+
+.start-screen header .navigation nav ul li:first-child a {
+    padding: 0px 0px 3px 0px;
+    border-bottom: 3px solid #F1CDB3;
+    color: #FAFAFA;
+}
+
+.start-screen header .navigation nav ul li a:hover {
+    padding: 0px 0px 3px 0px;
+    border-bottom: 3px solid #F1CDB3;
+    color: #FAFAFA;
+    cursor: pointer;
+}
+
+/*
+    Not only
+*/
+
+.start-screen .not-only {
+    margin: 0px auto;
+    height: 728px;
+    width: 1200px;
+    overflow: hidden;
+}
+
+.start-screen .not-only .content {
+    margin: 163px 42px 244px 0px;
+    height: 321px;
+    width: 460px;
+    float: left;
+}
+
+.start-screen .not-only .content h2 {
+    margin: 0px 0px 42px 0px;
+    width: 310px;
+}
+
+
+.start-screen .not-only .content p {
+    margin: 0px 0px 41px 0px;
+}
+
+.start-screen .not-only .content button {
+    margin: 0px;
+}
+
+.start-screen .not-only .content-img {
+    height: 100%;
+    width: 698px;
+    float: right;
+}
+
+/*
+    About
+*/
+
+.about {
+    margin: 0px auto;
+    height: 588px;
+    width: 1280px;
+    overflow: hidden;
+}
+
+.about .about-content {
+    margin: 80px 40px 100px 40px;
+    height: 408px;
+    width: 1200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.about .about-content .content-img {
+    margin: 0px 120px 0px 0px;
+    height: 408px;
+    width: 300px;
+}
+
+.about .about-content .content {
+    margin: 0px 0px 0px 0px;
+    height: 380px;
+    width: 430px;
+}
+
+.about .about-content .content h3 {
+    margin: 0px;
+    width: 370px;
+}
+
+.about .about-content .content p {
+    margin: 25px 0px 0px 0px;
+    color: #4C4C4C;
+}
