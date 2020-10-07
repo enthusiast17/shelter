@@ -41,6 +41,15 @@ h4 {
     color: #545454;
 }
 
+h5 {
+    font-family: 'Georgia-figma', serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 15px;
+    letter-spacing: 0.06em;
+    color: #545454;
+}
+
 p {
     font-family: Arial;
     font-weight: 400;
@@ -341,6 +350,10 @@ a:hover {
     background-color: #FAFAFA;
 }
 
+.pets .pets-content .slider .cards .card:hover {
+    cursor: pointer;
+}
+
 .pets .pets-content .slider .cards .card img {
     margin: 0px 0px 25px 0px;
 }
@@ -412,4 +425,78 @@ a:hover {
 
 .help .help-content .list .list-item h4 {
     margin-bottom: 0px;
+}
+
+/*
+    Donation
+*/
+
+.donation {
+    height: 464px;
+    width: 1280px;
+    overflow: hidden;
+    background-color: #F6F6F6;
+}
+
+.donation .donation-content {
+    height: 284px;
+    width: 1200px;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.donation .donation-content img {
+    margin: 0px 30px 0px 0px;
+}
+
+.donation .donation-content .information {
+    height: 282px;
+    width: 380px;
+    display: inline-block;
+}
+
+.donation .donation-content .information h3 {
+    margin: 0px;
+    width: 300px;
+}
+
+.donation .donation-content .information h5 {
+    margin: 20px 0px 20px 0px
+}
+
+.donation .donation-content .information .credit-card {
+    margin: 0px 0px 20px 0px;
+    height: 43px;
+    width: 349px;
+    border-radius: 9px;
+    background-color: #F1CDB3;
+    overflow: hidden;
+}
+
+.donation .donation-content .information .credit-card img {
+    margin: 10px 15px 10px 15px;
+    float: left;
+}
+
+.donation .donation-content .information .credit-card a {
+    margin: 10px 0px 10px 0px;
+    float: left;
+}
+
+.donation .donation-content .information .credit-card a:hover {
+    cursor: pointer;
+}
+
+.donation .donation-content .information .credit-card a h4 {
+    margin: 0px;
+    float: left;
+}
+
+.donation .donation-content .information p {
+    margin: 0px;
+    font-size: 12px;
+    font-style: italic;
+    line-height: 18px;
 }
