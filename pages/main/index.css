@@ -3,9 +3,9 @@
     src: url('../../assets/fonts/george.ttf');
 }
 
-body {
+html, body {
     margin: 0px;
-    height: 100%;
+    padding: 0px;
     width: 100%;
 }
 
@@ -499,4 +499,82 @@ a:hover {
     font-size: 12px;
     font-style: italic;
     line-height: 18px;
+}
+
+/*
+    Footer
+*/
+
+footer {
+    margin: 0px auto;
+    height: 350px;
+    width: 1280px;
+}
+
+.footer {
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-end;
+    background: url('../../assets/images/noise_transparent.png'), radial-gradient(110.67% 538.64% at 5.73% 50%, #513D2F 0%, #1A1A1C 100%), #211F20;
+}
+
+
+.footer .footer-content {
+    height: 310px;
+    width: 1200px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.footer .footer-content .contacts {
+    height: 234px;
+    width: 278.5px;
+}
+
+.footer .footer-content .location {
+    height: 234px;
+    width: 302px;
+} 
+
+.footer .footer-content h3 {
+    margin: 0px;
+    color: #FFFFFF;
+}
+
+.footer .footer-content a {
+    font-family: 'Georgia-figma', serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 20px;
+    letter-spacing: 0.06em;
+    color: #F1CDB3;
+    text-decoration: none;
+}
+
+.footer .footer-content-info {
+    height: 234px;
+    margin: 16px 0px 60px 0px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.footer .footer-content-info .info {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.footer .footer-content .info a img{
+    display: block;
+}
+
+.footer .footer-content .info a:first-child {
+    margin: 0px 20px 0px 0px;
 }
