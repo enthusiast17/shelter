@@ -1,0 +1,124 @@
+@font-face {
+    font-family: 'Georgia-figma';
+    src: url('../../assets/fonts/george.ttf');
+}
+
+html, body {
+    margin: 0px;
+    padding: 0px;
+    width: 100%;
+}
+
+
+/*
+    Header
+*/
+
+header {
+    margin: 0px auto;
+    height: 120px;
+    width: 1280px;
+    color: #545454;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+header .header-content {
+    height: 60px;
+    width: 1200px;
+    overflow: hidden;
+}
+
+/*
+    Logo
+*/
+
+header .header-content .logo {
+    position: relative;
+    float: left;
+    height: 60px;
+    width: 184px;
+}
+
+header .header-content .logo .logo-title>a {
+    font-family: 'Georgia-figma', serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 33px;
+    line-height: 110%;
+    color: #545454;
+    letter-spacing: 1px;
+    word-spacing: 2.3px;
+    text-align: start;
+    text-align-last: justify;
+    text-align-last: center;
+}
+
+header .header-content .logo .logo-subtitle {
+    margin: 7px 0px 0px 3px;
+}
+
+header .header-content .logo .logo-subtitle>a {
+    font-family: Arial;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 13px;
+    color: #545454;
+    letter-spacing: 0.1em;
+    text-align: right;
+}
+
+/*
+    Navigation
+*/
+
+header .header-content .navigation {
+    height: 100%;
+    width: 443px;
+    float: right;
+    display: flex;
+    align-items: center;
+}
+
+header .header-content .navigation nav {
+    margin: 16px 0px 18px 0px;
+    width: 100%;
+}
+
+header .header-content .navigation nav ul {
+    margin: 0px;
+    padding: 0px;
+    list-style-type: none;
+}
+
+header .header-content .navigation nav ul li {
+    display: inline-block;
+}
+
+header .header-content .navigation nav ul li + li:before {
+    margin: 0px 0px 0px 31.5px;
+    content: "";
+}
+
+header .header-content .navigation nav ul li a {
+    font-family: Arial;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 15px;
+    color: #545454;
+}
+
+header .header-content .navigation nav ul li:nth-child(2) a {
+    padding: 0px 0px 3px 0px;
+    border-bottom: 3px solid #F1CDB3;
+    color: #545454;
+}
+
+header .header-content .navigation nav ul li a:hover {
+    padding: 0px 0px 3px 0px;
+    border-bottom: 3px solid #F1CDB3;
+    color: #FAFAFA;
+    cursor: pointer;
+}
