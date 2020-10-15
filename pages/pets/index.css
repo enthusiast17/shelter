@@ -1,124 +1,113 @@
 @font-face {
-    font-family: 'Georgia-figma';
-    src: url('../../assets/fonts/george.ttf');
+  font-family: 'Georgia-figma';
+  src: url("../../assets/fonts/george.ttf");
+}
+
+.header__logo-title {
+  font-family: 'Georgia-figma', serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.header__logo-subtitle, .header__list-link {
+  font-family: Arial;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.header__logo-title:hover, .header__logo-subtitle:hover, .header__list-link:hover {
+  cursor: pointer;
 }
 
 html, body {
-    margin: 0px;
-    padding: 0px;
-    width: 100%;
+  margin: 0px;
+  padding: 0px;
+  width: 100%;
 }
 
-
-/*
-    Header
-*/
-
-header {
-    margin: 0px auto;
-    height: 120px;
-    width: 1280px;
-    color: #545454;
-    overflow: hidden;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+.header {
+  margin: 0px auto;
+  width: 1280px;
+  overflow: hidden;
 }
 
-header .header-content {
-    height: 60px;
-    width: 1200px;
-    overflow: hidden;
+.header__content {
+  margin: 30px 40px;
+  width: 1200px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
-/*
-    Logo
-*/
-
-header .header-content .logo {
-    position: relative;
-    float: left;
-    height: 60px;
-    width: 184px;
+.header__logo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
-header .header-content .logo .logo-title>a {
-    font-family: 'Georgia-figma', serif;
-    font-weight: 400;
-    font-style: normal;
-    font-size: 33px;
-    line-height: 110%;
-    color: #545454;
-    letter-spacing: 1px;
-    word-spacing: 2.3px;
-    text-align: start;
-    text-align-last: justify;
-    text-align-last: center;
+.header__logo-title {
+  margin: 0px 0px 8px 0px;
+  font-size: 33px;
+  color: #545454;
+  line-height: 110%;
+  letter-spacing: 1px;
+  word-spacing: 2.3px;
 }
 
-header .header-content .logo .logo-subtitle {
-    margin: 7px 0px 0px 3px;
+.header__logo-subtitle {
+  font-size: 13px;
+  color: #292929;
+  letter-spacing: 0.1em;
+  text-align: end;
 }
 
-header .header-content .logo .logo-subtitle>a {
-    font-family: Arial;
-    font-weight: 400;
-    font-style: normal;
-    font-size: 13px;
-    color: #545454;
-    letter-spacing: 0.1em;
-    text-align: right;
+.header__menu {
+  overflow: hidden;
 }
 
-/*
-    Navigation
-*/
-
-header .header-content .navigation {
-    height: 100%;
-    width: 443px;
-    float: right;
-    display: flex;
-    align-items: center;
+.header__list {
+  padding: 4px 0px 5px 0px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  list-style-type: none;
 }
 
-header .header-content .navigation nav {
-    margin: 16px 0px 18px 0px;
-    width: 100%;
+.header__list-item:not(:last-child) {
+  margin: 0px 35px 0px 0px;
 }
 
-header .header-content .navigation nav ul {
-    margin: 0px;
-    padding: 0px;
-    list-style-type: none;
+.header__list-item > a:hover, .header__list-item:nth-child(2) > a {
+  padding: 0px 0px 3px 0px;
+  border-bottom: 3px solid #F1CDB3;
+  color: #292929;
 }
 
-header .header-content .navigation nav ul li {
-    display: inline-block;
+.header__list-link {
+  margin: 0px;
+  padding: 5px 0px 0px 0px;
+  font-size: 15px;
+  color: #545454;
 }
-
-header .header-content .navigation nav ul li + li:before {
-    margin: 0px 0px 0px 31.5px;
-    content: "";
-}
-
-header .header-content .navigation nav ul li a {
-    font-family: Arial;
-    font-weight: 400;
-    font-style: normal;
-    font-size: 15px;
-    color: #545454;
-}
-
-header .header-content .navigation nav ul li:nth-child(2) a {
-    padding: 0px 0px 3px 0px;
-    border-bottom: 3px solid #F1CDB3;
-    color: #545454;
-}
-
-header .header-content .navigation nav ul li a:hover {
-    padding: 0px 0px 3px 0px;
-    border-bottom: 3px solid #F1CDB3;
-    color: #FAFAFA;
-    cursor: pointer;
-}
+/*# sourceMappingURL=index.css.map */

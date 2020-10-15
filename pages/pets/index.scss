@@ -1,0 +1,102 @@
+@font-face {
+    font-family: 'Georgia-figma';
+    src: url('../../assets/fonts/george.ttf');
+}
+
+$dark-light-color: #545454;
+$dark-color: #292929;
+$primary-color: #F1CDB3;
+
+%george-font {
+    font-family: 'Georgia-figma', serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+%arial-font {
+    font-family: Arial;
+    font-weight: 400;
+    font-style: normal;
+}
+
+%link {
+    &:hover {
+        cursor: pointer;
+    }
+}
+
+html, body {
+    margin: 0px;
+    padding: 0px;
+    width: 100%;
+}
+
+.header {
+    margin: 0px auto;
+    width: 1280px;
+    overflow: hidden;
+
+    &__content {
+        margin: 30px 40px;
+        width: 1200px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    &__logo {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    &__logo-title {
+        margin: 0px 0px 8px 0px;
+        @extend %george-font, %link;
+        font-size: 33px;
+        color: $dark-light-color;
+        line-height: 110%;
+        letter-spacing: 1px;
+        word-spacing: 2.3px;
+    }
+
+    &__logo-subtitle {
+        @extend %arial-font, %link;
+        font-size: 13px;
+        color: $dark-color;
+        letter-spacing: 0.1em;
+        text-align: end;
+    }
+
+    &__menu {
+        overflow: hidden;
+    }
+
+    &__list {
+        padding: 4px 0px 5px 0px;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        list-style-type: none;
+    }
+
+    &__list-item {
+        &:not(:last-child) {
+            margin: 0px 35px 0px 0px;
+        }
+        
+        &>a:hover, &:nth-child(2)>a{
+            padding: 0px 0px 3px 0px;
+            border-bottom: 3px solid $primary-color;
+            color: $dark-color;
+        }
+    }
+
+    &__list-link {
+        margin: 0px;
+        padding: 5px 0px 0px 0px;
+        @extend %arial-font, %link;
+        font-size: 15px;
+        color: $dark-light-color;
+    }
+}
