@@ -1,0 +1,220 @@
+@font-face {
+    font-family: 'Georgia-figma';
+    src: url('../../assets/fonts/george.ttf');
+}
+
+html, body {
+    margin: 0px;
+    padding: 0px;
+    width: 100%;
+}
+
+/*
+    General
+*/
+
+h3 {
+    font-family: 'Georgia-figma', serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 35px;
+    line-height: 45.5px;
+    letter-spacing: 0.06em;
+    color: #545454;
+}
+
+h4 {
+    font-family: 'Georgia-figma', serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 20px;
+    letter-spacing: 0.06em;
+    color: #545454;
+}
+
+button {
+    display: block;
+    padding: 13px 43px 13px 43px;
+    font-family: 'Georgia-figma', serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 17px;
+    letter-spacing: 0.06em;
+    line-height: 22.1px;
+    background-color: #FAFAFA;
+    border: 2px solid #F1CDB3;
+    border-radius: 100px;
+    color: #292929;
+    outline: none;
+}
+
+/*
+    Header
+*/
+
+header {
+    margin: 0px auto;
+    height: 120px;
+    width: 1280px;
+    color: #545454;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+header .header-content {
+    height: 60px;
+    width: 1200px;
+    overflow: hidden;
+}
+
+/*
+    Logo
+*/
+
+header .header-content .logo {
+    position: relative;
+    float: left;
+    height: 60px;
+    width: 184px;
+}
+
+header .header-content .logo .logo-title>a {
+    font-family: 'Georgia-figma', serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 33px;
+    line-height: 110%;
+    color: #545454;
+    letter-spacing: 1px;
+    word-spacing: 2.3px;
+    text-align: start;
+    text-align-last: justify;
+    text-align-last: center;
+}
+
+header .header-content .logo .logo-subtitle {
+    margin: 7px 0px 0px 3px;
+}
+
+header .header-content .logo .logo-subtitle>a {
+    font-family: Arial;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 13px;
+    color: #545454;
+    letter-spacing: 0.1em;
+    text-align: right;
+}
+
+/*
+    Navigation
+*/
+
+header .header-content .navigation {
+    height: 100%;
+    width: 443px;
+    float: right;
+    display: flex;
+    align-items: center;
+}
+
+header .header-content .navigation nav {
+    margin: 16px 0px 18px 0px;
+    width: 100%;
+}
+
+header .header-content .navigation nav ul {
+    margin: 0px;
+    padding: 0px;
+    list-style-type: none;
+}
+
+header .header-content .navigation nav ul li {
+    display: inline-block;
+}
+
+header .header-content .navigation nav ul li + li:before {
+    margin: 0px 0px 0px 31.5px;
+    content: "";
+}
+
+header .header-content .navigation nav ul li a {
+    font-family: Arial;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 15px;
+    color: #545454;
+}
+
+header .header-content .navigation nav ul li:nth-child(2) a {
+    padding: 0px 0px 3px 0px;
+    border-bottom: 3px solid #F1CDB3;
+    color: #545454;
+}
+
+header .header-content .navigation nav ul li a:hover {
+    padding: 0px 0px 3px 0px;
+    border-bottom: 3px solid #F1CDB3;
+    color: #FAFAFA;
+    cursor: pointer;
+}
+
+/*
+    Pets
+*/
+
+.pets {
+    margin: 0px auto;
+    width: 1280px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #F6F6F6;
+    overflow: hidden;
+}
+
+.pets .pets-content {
+    margin: 80px auto 100px auto;
+    width: 1200px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    overflow: hidden;
+}
+
+.pets .pets-content h3 {
+    margin: 0px 0px 60px 0px;
+}
+
+.pets .pets-content .cards {
+    margin: 0px 0px 60px 0px;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 270px 270px 270px 270px;
+    row-gap: 30px;
+    justify-content: space-between;
+}
+
+.pets .pets-content .cards .card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #FAFAFA;
+    border-radius: 9px;
+}
+
+.pets .pets-content .cards .card img {
+    margin: 0px 0px 30px 0px;
+}
+
+.pets .pets-content .cards .card h4 {
+    margin: 0px 0px 30px 0px;
+}
+.pets .pets-content .cards .card button {
+    margin: 0px 0px 30px 0px;
+}
+
+
