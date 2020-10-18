@@ -9,6 +9,7 @@ $dark-s-color: #CDCDCD;
 $primary-color: #F1CDB3;
 $light-l-color: #F6F6F6;
 $light-s-color: #FAFAFA;
+$white-color: #FFFFFF;
 
 %george-font {
     font-family: 'Georgia-figma', serif;
@@ -225,5 +226,64 @@ html, body {
         @extend %paginator-button;
         border: 2px solid $primary-color;
         color: $dark-color
+    }
+}
+
+.footer {
+    margin: 0px auto;
+    width: 1280px;
+    background: url('../../assets/images/noise_transparent.png'), radial-gradient(110.67% 538.64% at 5.73% 50%, #513D2F 0%, #1A1A1C 100%), #211F20;
+    overflow: hidden;
+
+    &__content {
+        margin: 40px auto 0px auto;
+        width: 1200px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        overflow: hidden;
+    }
+
+    &__info-content {
+        margin: 16px 0px 60px 0px;
+        height: 234px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        overflow: hidden;
+    }
+
+    &__title {
+        margin: 0px;
+        @extend %george-font;
+        font-size: 35px;
+        line-height: 45.5px;
+        letter-spacing: 0.06em;
+        color: $white-color;
+    }
+
+    &__info {
+        margin: 0px;
+        display: flex;
+        flex-direction: row;
+        column-gap: 20px;
+        align-items: center;
+    }
+
+    &__info-icon {
+        display: inline-block;
+
+        &>img {
+            display: block;
+        }
+    }
+
+    &__info-link {
+        @extend %george-font, %link;
+        font-size: 20px;
+        line-height: 23px;
+        letter-spacing: 0.06em;
+        color: $primary-color;
+        text-decoration: none;
     }
 }

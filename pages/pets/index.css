@@ -3,7 +3,7 @@
   src: url("../../assets/fonts/george.ttf");
 }
 
-.header__logo-title, .pets__content-title, .pets__card-title {
+.header__logo-title, .pets__content-title, .pets__card-title, .footer__title, .footer__info-link {
   font-family: 'Georgia-figma', serif;
   font-weight: 400;
   font-style: normal;
@@ -31,7 +31,7 @@
   cursor: pointer;
 }
 
-.header__logo-title:hover, .header__logo-subtitle:hover, .header__list-link:hover {
+.header__logo-title:hover, .header__logo-subtitle:hover, .header__list-link:hover, .footer__info-link:hover {
   cursor: pointer;
 }
 
@@ -252,5 +252,84 @@ html, body {
 .pets__right-button, .pets__end-button {
   border: 2px solid #F1CDB3;
   color: #292929;
+}
+
+.footer {
+  margin: 0px auto;
+  width: 1280px;
+  background: url("../../assets/images/noise_transparent.png"), radial-gradient(110.67% 538.64% at 5.73% 50%, #513D2F 0%, #1A1A1C 100%), #211F20;
+  overflow: hidden;
+}
+
+.footer__content {
+  margin: 40px auto 0px auto;
+  width: 1200px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  overflow: hidden;
+}
+
+.footer__info-content {
+  margin: 16px 0px 60px 0px;
+  height: 234px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  overflow: hidden;
+}
+
+.footer__title {
+  margin: 0px;
+  font-size: 35px;
+  line-height: 45.5px;
+  letter-spacing: 0.06em;
+  color: #FFFFFF;
+}
+
+.footer__info {
+  margin: 0px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-column-gap: 20px;
+          column-gap: 20px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.footer__info-icon {
+  display: inline-block;
+}
+
+.footer__info-icon > img {
+  display: block;
+}
+
+.footer__info-link {
+  font-size: 20px;
+  line-height: 23px;
+  letter-spacing: 0.06em;
+  color: #F1CDB3;
+  text-decoration: none;
 }
 /*# sourceMappingURL=index.css.map */
