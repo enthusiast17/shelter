@@ -618,7 +618,7 @@ main {
   text-decoration: none;
 }
 
-@media (max-width: 1280px) {
+@media (max-width: 1279px) {
   .header {
     width: 768px;
   }
@@ -713,7 +713,7 @@ main {
   }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 767px) {
   .header {
     width: 320px;
   }
