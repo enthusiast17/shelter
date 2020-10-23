@@ -54,12 +54,15 @@ html, body {
 .header {
   margin: 0px auto;
   width: 1280px;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  background-color: #FFFFFF;
   overflow: hidden;
 }
 
 .header__content {
   margin: 30px 40px;
-  width: 1200px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -86,7 +89,7 @@ html, body {
 }
 
 .header__logo-title {
-  margin: 0px 0px 8px 0px;
+  margin: 0px 0px 10px 0px;
   font-size: 33px;
   color: #545454;
   line-height: 110%;
@@ -137,6 +140,12 @@ html, body {
   color: #545454;
 }
 
+main {
+  margin: 0px auto;
+  width: 1280px;
+  overflow: hidden;
+}
+
 .pets {
   margin: 0px auto;
   width: 1280px;
@@ -145,8 +154,7 @@ html, body {
 }
 
 .pets__content {
-  margin: 80px auto 100px auto;
-  width: 1200px;
+  margin: 80px 40px 100px 40px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -262,8 +270,7 @@ html, body {
 }
 
 .footer__content {
-  margin: 40px auto 0px auto;
-  width: 1200px;
+  margin: 40px 40px 0px 40px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -295,6 +302,7 @@ html, body {
 
 .footer__title {
   margin: 0px;
+  width: 280px;
   font-size: 35px;
   line-height: 45.5px;
   letter-spacing: 0.06em;
@@ -331,5 +339,139 @@ html, body {
   letter-spacing: 0.06em;
   color: #F1CDB3;
   text-decoration: none;
+}
+
+@media (max-width: 1279px) {
+  .header {
+    width: 768px;
+  }
+  .header__content {
+    margin: 30px;
+  }
+  main {
+    width: 768px;
+  }
+  .pets {
+    width: 768px;
+  }
+  .pets__content {
+    padding: 20px 0px 6px 0px;
+    margin: 60px 30px 70px 30px;
+    row-gap: 0px;
+    overflow: hidden;
+  }
+  .pets__content-title {
+    margin: 0px 0px 30px 0px;
+  }
+  .pets__cards {
+    padding: 0px;
+    margin: 0px 0px 40px 0px;
+    width: auto;
+    -ms-grid-columns: 270px 270px;
+        grid-template-columns: 270px 270px;
+    -webkit-column-gap: 40px;
+            column-gap: 40px;
+    -webkit-box-pack: baseline;
+        -ms-flex-pack: baseline;
+            justify-content: baseline;
+  }
+  .pets__card-item:nth-child(7), .pets__card-item:nth-child(8) {
+    display: none;
+  }
+  .footer {
+    width: 768px;
+  }
+  .footer__content {
+    margin: 30px 30px 0px 30px;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-column-gap: 60px;
+            column-gap: 60px;
+    row-gap: 65px;
+  }
+  .footer__info-content {
+    margin: 0px;
+  }
+}
+
+@media (max-width: 767px) {
+  .header {
+    width: 320px;
+  }
+  .header__content {
+    margin: 30px 53px 30px 10px;
+  }
+  .header__menu {
+    display: none;
+  }
+  main {
+    width: 320px;
+  }
+  .pets {
+    width: 320px;
+  }
+  .pets__content {
+    padding: 0px;
+    margin: 42px 10px 42px 10px;
+    row-gap: 42px;
+  }
+  .pets__content-title {
+    margin: 0px;
+    font-size: 25px;
+    line-height: 32.5px;
+    letter-spacing: 0.06em;
+  }
+  .pets__cards {
+    margin: 0px;
+    -ms-grid-columns: 270px;
+        grid-template-columns: 270px;
+  }
+  .pets__card-item:nth-child(4), .pets__card-item:nth-child(5), .pets__card-item:nth-child(6), .pets__card-item:nth-child(7), .pets__card-item:nth-child(8) {
+    display: none;
+  }
+  .pets__pagination {
+    -webkit-column-gap: 10px;
+            column-gap: 10px;
+  }
+  .footer {
+    width: 320px;
+  }
+  .footer__content {
+    margin: 30px 10px 0px 10px;
+    row-gap: 40px;
+  }
+  .footer__info-content {
+    height: auto;
+    margin: 0px;
+    row-gap: 40px;
+    -webkit-box-pack: baseline;
+        -ms-flex-pack: baseline;
+            justify-content: baseline;
+  }
+  .footer__info-content:nth-child(2) .footer__info {
+    -webkit-column-gap: 19px;
+            column-gap: 19px;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: start;
+  }
+  .footer__title {
+    margin: 0px 10px 0px 10px;
+    font-size: 25px;
+    line-height: 32.5px;
+    letter-spacing: 0.06em;
+    text-align: center;
+  }
+  .footer__info {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .footer__img {
+    width: 260px;
+  }
 }
 /*# sourceMappingURL=index.css.map */
