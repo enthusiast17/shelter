@@ -7,7 +7,17 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
     </head>
     <body>
-        <header class="header">
+        <div class="popup">
+            <button class="popup__button"></button>
+            <div class="popup__content">
+                <img class="popup__img" src="../../assets/images/our-pets/pets/pets-jennifer.png">
+
+                <div class="popup__subcontent">
+                </div>
+            </div>
+        </div>
+        <div class="blockout"></div>
+        <header class="header header_sticky">
             <div class="header__content">
                 <div class="header__logo">
                     <a class="header__logo-title">Cozy House</a>
@@ -17,27 +27,33 @@
                 <nav class="header__menu">
                     <ul class="header__list">
                         <li class="header__list-item"><a class="header__list-link">About the shelter</a></li>
-                        <li class="header__list-item"><a class="header__list-link">Our pets</a></li>
+                        <li class="header__list-item"><a class="header__list-link" href="../pets/">Our pets</a></li>
                         <li class="header__list-item"><a class="header__list-link">Help the shelter</a></li>
                         <li class="header__list-item"><a class="header__list-link">Contacts</a></li>
                     </ul>
                 </nav>
-            </div>
-        </header>
 
-        <main>
+                <button class="header__button">
+                    <span class="header__button-line"></span>
+                    <span class="header__button-line"></span>
+                    <span class="header__button-line"></span>
+                </button>
+            </div>
+
             <div class="not-only">
                 <div class="not-only__content">
                     <div class="not-only__subcontent">
                         <h2 class="not-only__title">Not only people</br>need a house</h2>
                         <p class="not-only__text">We offer to give a chance to a little and nice puppy with an extremely wide and open heart. He or she will love you more than anybody else in the world, you will see!</p>
-                        <button class="not-only__button">Make a friend</button>
+                        <button class="not-only__button" onclick="location.href='../pets'">Make a friend</button>
                     </div>
 
                     <img class="not-only__img" src="../../assets/images/main/not-only/start-screen-puppy.png" alt="dog"/>
                 </div>
             </div>
+        </header>
 
+        <main>
             <div class="about">
                 <div class="about__content">
                     <img class="about__img" src="../../assets/images/main/about/about-pets.png" alt="cat and dog">
@@ -56,21 +72,11 @@
 
                     <div class="pets__slider">
                         <button class="pets__left-arrow-button"></button>
-                        <div class="pets__cards">
-                            <div class="pets__card-item">
-                                <img class="pets__card-item-img" src="../../assets/images/main/pets/pets-katrine.png" alt="katrine">
-                                <h4 class="pets__card-item-title">Katrine</h4>
-                                <button class="pets__card-item-button">Learn more</button>
+                        <div class="pets__cards-slider">
+                            <div class="pets__cards cards_current">
                             </div>
-                            <div class="pets__card-item">
-                                <img class="pets__card-item-img" src="../../assets/images/main/pets/pets-jennifer.png" alt="jennifer">
-                                <h4 class="pets__card-item-title">Jennifer</h4>
-                                <button class="pets__card-item-button">Learn more</button>
-                            </div>
-                            <div class="pets__card-item">
-                                <img class="pets__card-item-img" src="../../assets/images/main/pets/pets-woody.png" alt="woody">
-                                <h4 class="pets__card-item-title">Woody</h4>
-                                <button class="pets__card-item-button">Learn more</button>
+    
+                            <div class="pets__cards cards_next">
                             </div>
                         </div>
                         <button class="pets__right-arrow-button"></button>
@@ -80,7 +86,7 @@
                         </div>
                     </div>
 
-                    <button class="pets__button">Get to know the rest</button>
+                    <button class="pets__button" onclick="location.href='../pets'">Get to know the rest</button>
                 </div>
             </div>
 
@@ -189,4 +195,5 @@
             </div>
         </footer>
     </body>
+    <script type="module" src="index.js"></script>
 </html>

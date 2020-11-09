@@ -6,21 +6,34 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
     </head>
     <body>
-        <header class="header">
+        <div class="popup">
+            <button class="popup__button"></button>
+            <div class="popup__content">
+            </div>
+        </div>
+        <div class="blockout"></div>
+        <header class="header header_sticky">
+            <div class="blockout"></div>
             <div class="header__content">
                 <div class="header__logo">
-                    <a class="header__logo-title">Cozy House</a>
-                    <a class="header__logo-subtitle">Shelter for pets in Boston</a>
+                    <a class="header__logo-title" href="../main/">Cozy House</a>
+                    <a class="header__logo-subtitle" href="../main/">Shelter for pets in Boston</a>
                 </div>
     
                 <nav class="header__menu">
                     <ul class="header__list">
-                        <li class="header__list-item"><a class="header__list-link">About the shelter</a></li>
+                        <li class="header__list-item"><a class="header__list-link" href="../main/">About the shelter</a></li>
                         <li class="header__list-item"><a class="header__list-link">Our pets</a></li>
                         <li class="header__list-item"><a class="header__list-link">Help the shelter</a></li>
                         <li class="header__list-item"><a class="header__list-link">Contacts</a></li>
                     </ul>
                 </nav>
+
+                <button class="header__button">
+                    <span class="header__button-line"></span>
+                    <span class="header__button-line"></span>
+                    <span class="header__button-line"></span>
+                </button>
             </div>
         </header>
 
@@ -28,54 +41,16 @@
             <div class="pets">
                 <div class="pets__content">
                     <h3  class="pets__content-title">Our friends who</br>are looking for a house</h3>
-                    <div class="pets__cards">
-                        <div class="pets__card-item">
-                            <img class="pets__card-img" src="../../assets/images/our-pets/pets/pets-katrine.png" alt="pet-katrine">
-                            <h4 class="pets__card-title">Katrine</h4>
-                            <button class="pets__card-button">Learn more</button>
-                        </div>
-                        <div class="pets__card-item">
-                            <img class="pets__card-img" src="../../assets/images/our-pets/pets/pets-jennifer.png" alt="pet-jennifer">
-                            <h4 class="pets__card-title">Jennifer</h4>
-                            <button class="pets__card-button">Learn more</button>
-                        </div>
-                        <div class="pets__card-item">
-                            <img class="pets__card-img" src="../../assets/images/our-pets/pets/pets-woody.png" alt="pet-woody">
-                            <h4 class="pets__card-title">Woody</h4>
-                            <button class="pets__card-button">Learn more</button>
-                        </div>
-                        <div class="pets__card-item">
-                            <img class="pets__card-img" src="../../assets/images/our-pets/pets/pets-sophia.png" alt="pet-sophia">
-                            <h4 class="pets__card-title">Sophia</h4>
-                            <button class="pets__card-button">Learn more</button>
-                        </div>
-                        <div class="pets__card-item">
-                            <img class="pets__card-img" src="../../assets/images/our-pets/pets/pets-timmy.png" alt="pet-timmy">
-                            <h4 class="pets__card-title">Timmy</h4>
-                            <button class="pets__card-button">Learn more</button>
-                        </div>
-                        <div class="pets__card-item">
-                            <img class="pets__card-img" src="../../assets/images/our-pets/pets/pets-charly.png" alt="pet-charly">
-                            <h4 class="pets__card-title">Charly</h4>
-                            <button class="pets__card-button">Learn more</button>
-                        </div>
-                        <div class="pets__card-item">
-                            <img class="pets__card-img" src="../../assets/images/our-pets/pets/pets-scarlet.png" alt="pet-scarlet">
-                            <h4 class="pets__card-title">Scarlett</h4>
-                            <button class="pets__card-button">Learn more</button>
-                        </div>
-                        <div class="pets__card-item">
-                            <img class="pets__card-img" src="../../assets/images/our-pets/pets/pets-freddie.png" alt="pet-freddie">
-                            <h4 class="pets__card-title">Freddie</h4>
-                            <button class="pets__card-button">Learn more</button>
-                        </div>
+                    <div class="pets__cards-slider">
+                        <div class="pets__cards cards_current"></div>
+                        <div class="pets__cards cards_next"></div>
                     </div>
                     <div class="pets__pagination">
-                        <button class="pets__start-button">&lt;&lt;</button>
-                        <button class="pets__left-button">&lt;</button>
+                        <button class="pets__start-button disactive_button">&lt;&lt;</button>
+                        <button class="pets__left-button disactive_button">&lt;</button>
                         <button class="pets__current-page-button">1</button>
-                        <button class="pets__right-button">&gt;</button>
-                        <button class="pets__end-button">&gt;&gt;</button>
+                        <button class="pets__right-button active_button">&gt;</button>
+                        <button class="pets__end-button active_button">&gt;&gt;</button>
                     </div>
                 </div>
             </div>
@@ -108,4 +83,5 @@
             </div>
         </footer>
     </body>
+    <script type="module" src="index.js"></script>
 </html>
